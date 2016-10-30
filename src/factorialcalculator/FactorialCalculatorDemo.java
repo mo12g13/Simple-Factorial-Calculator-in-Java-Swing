@@ -65,6 +65,11 @@ public class FactorialCalculatorDemo extends javax.swing.JFrame {
 
         btnExit.setFont(new java.awt.Font("Bell MT", 1, 18)); // NOI18N
         btnExit.setText("Exit");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
         btnCalculate.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         btnCalculate.setText("Calculate");
@@ -139,6 +144,10 @@ public class FactorialCalculatorDemo extends javax.swing.JFrame {
         lblFactorialDisplay.setText("");
         txtNumberInput.requestFocus();
     }//GEN-LAST:event_btnClearActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        System.exit(0);        // TODO add your handling code here:
+    }//GEN-LAST:event_btnExitActionPerformed
 
     /**
      * @param args the command line arguments
